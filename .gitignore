@@ -1,3 +1,19 @@
+# ==========================================
+# PROJECT IGNORES
+# ==========================================
+
+# Ignore dataset content but not readme
+#!dataset/
+
+dataset/*
+!dataset/README.md
+
+# dataset/README.md
+
+# ==========================================
+# PYTHON COMMON IGNORES
+# ==========================================
+
 # Byte-compiled / optimized / DLL files
 __pycache__/
 *.py[cod]
