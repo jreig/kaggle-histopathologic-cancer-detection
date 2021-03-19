@@ -7,7 +7,7 @@ services:
       - "6006:6006" # Tensorboard
     volumes:
       - '$PWD/dataset:/dataset'
-      - '$PWD/notebooks:/usr/src/notebooks'
+      - '$PWD/notebooks:/tf/notebooks'
       - '$PWD/scripts:/usr/src/scripts'
     deploy:
       resources:

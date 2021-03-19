@@ -18,7 +18,9 @@ RUN pip install keras \
                 tensorboard
 
 # Set up directories
-RUN ln -s /tf/notebooks /usr/src/notebooks
-
+RUN mkdir /tf/notebooks
+RUN rm -d -R /tf/tensorflow-tutorials
+RUN chown -R 1000:1000 /tf
+# RUN ln -s /tf/notebooks /usr/src/notebooks
 
 WORKDIR /usr/src
