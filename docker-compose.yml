@@ -1,0 +1,16 @@
+services:
+  tensorflow:
+    build: .
+    user: 1000:1000 # Match your user:group
+    ports:
+      - "8888:8888" # Jupyter
+      - "6006:6006" # Tensorboard
+    volumes:
+      - '$PWD/dataset:/dataset'
+      - '$PWD/notebooks:/usr/src/notebooks'
+      - '$PWD/scripts:/usr/src/scripts'
+    deploy:
+      resources:
+        reservations:
+          devices:
+            - capabilities: ["gpu"]

@@ -3,12 +3,12 @@
 # ==========================================
 
 # Ignore dataset content but not readme
-#!dataset/
-
 dataset/*
 !dataset/README.md
+!dataset/setup.sh
 
-# dataset/README.md
+# vscode
+.vscode/
 
 # ==========================================
 # PYTHON COMMON IGNORES
