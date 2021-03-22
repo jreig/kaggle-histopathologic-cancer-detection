@@ -17,7 +17,8 @@ RUN pip install keras \
                 scikit-learn \
                 matplotlib \
                 opencv-python \
-                tensorboard
+                tensorboard \
+                tqdm
 
 # RUN apt autoclean
 

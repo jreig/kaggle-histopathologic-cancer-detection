@@ -1,5 +1,5 @@
 services:
-  tensorflow:
+  notebookserver:
     build: .
     user: 1000:1000 # Match your user:group
     ports:
